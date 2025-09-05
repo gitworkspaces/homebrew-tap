@@ -1,0 +1,3 @@
+# Homebrew tap specific ignores
+Formula/*.rb
+!Formula/.keep

@@ -1,0 +1,2 @@
+# This file ensures the Formula directory is tracked by git
+# GoReleaser will create Formula/gitws.rb on the first release
