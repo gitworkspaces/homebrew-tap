@@ -5,21 +5,21 @@
 class Gitws < Formula
   desc "Separate work/personal Git identities. Keys, SSH aliases, and guards."
   homepage "https://gitws.dev"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gitworkspaces/gitws/releases/download/v1.0.0/gitws_1.0.0_darwin_amd64.tar.gz"
-      sha256 "1ccc7602bc0b391b4bcbeb169ad52bcc6f86ff1eea16139283324e8fa47e1d4f"
+      url "https://github.com/gitworkspaces/gitws/releases/download/v1.1.0/gitws_1.1.0_darwin_amd64.tar.gz"
+      sha256 "7fbbdbbf85cd910f95e6e8514bf040f9cd56f30f6edeb76eba139d9977797c69"
 
       def install
         bin.install "gitws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gitworkspaces/gitws/releases/download/v1.0.0/gitws_1.0.0_darwin_arm64.tar.gz"
-      sha256 "e4ba195415b8438ab804f61f3f9ac9c52cec2b2a6a72d37ce09a84446749b093"
+      url "https://github.com/gitworkspaces/gitws/releases/download/v1.1.0/gitws_1.1.0_darwin_arm64.tar.gz"
+      sha256 "662e3b36ccb9385a07f353bb95c6bcf4999c5291eb00c25b4dcc48ba378e9b57"
 
       def install
         bin.install "gitws"
@@ -29,15 +29,15 @@ class Gitws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gitworkspaces/gitws/releases/download/v1.0.0/gitws_1.0.0_linux_amd64.tar.gz"
-      sha256 "ca6ac57743109f1dd85f1ff73206ea02675c076101b4697d4b5cf7067650b35d"
+      url "https://github.com/gitworkspaces/gitws/releases/download/v1.1.0/gitws_1.1.0_linux_amd64.tar.gz"
+      sha256 "06fa4d3fc38a3a8701a75dc527a7ef12b89ecfb2f4727012155be48c3bf94879"
       def install
         bin.install "gitws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gitworkspaces/gitws/releases/download/v1.0.0/gitws_1.0.0_linux_arm64.tar.gz"
-      sha256 "0067938d1a6317dc10263504ee46ff7a8d44ed980b56b2a2485efa9283e17ea2"
+      url "https://github.com/gitworkspaces/gitws/releases/download/v1.1.0/gitws_1.1.0_linux_arm64.tar.gz"
+      sha256 "50bf1639d346698d5749da2afeb87930a0f65c1de118853ef0e5f1582dc4da19"
       def install
         bin.install "gitws"
       end
